@@ -24,7 +24,9 @@ By default, **RadGridView** starts [editing]({%slug winforms/gridview/editors/ed
 
 6\. **CellValueChanged** - The **GridViewEditManager** confirms the editor's changes when the user presses Enter/Tab or navigate to another cell. Thus, the new editor's value is committed to the cell and the cell's value is changed accordingly.
 
-7\. **CellEndEdit** - The **GridViewEditManager** ends the edit operation and deactivates the editor when the editor's value is either confirmed by pressing Enter/Tab or the user discards the changes by pressing Escape. 
+7\. **CellEndEdit** - The **GridViewEditManager** ends the edit operation and deactivates the editor when the editor's value is confirmed by pressing Enter/Tab or when the control loses focus. The user ends the edit operation and discards the changes by pressing Escape key.
+
+>note Since R3 2021 **BaseGridEditor** (the base class for all editors) offers **EndEditOnLostFocus** property. This property indicates whether the active editor should close when the grid loses focus. If you want to keep the editor active when the control loses focus you should set **EndEditOnLostFocus** to *false*.
 
 >note When the grid is in edit mode and the user navigates to another cell either by pressing Tab or by clicking a cell, the editor will be activated for the new current cell (if the **BeginEditMode** property value is not **BeginEditProgrammatically**). 
 
