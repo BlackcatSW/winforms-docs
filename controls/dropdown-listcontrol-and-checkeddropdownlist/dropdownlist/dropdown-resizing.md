@@ -257,5 +257,11 @@ Me.radDropDownList1.DropDownListElement.DefaultItemsCountInDropDown = 3
 
 {{endregion}} 
 
+The control provides another property to control the items inside the drop-down part of the control. By setting the __MaxDropDownItems__ you can set the maximum number of items to be visible in the drop-down area.
+
+> The __MaxDropDownItems__ has __lower__ priority than the __DefaultItemsCountInDropDown__.
+
+
+
 
 

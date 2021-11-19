@@ -47,8 +47,26 @@ End Sub
 
 ````
 
-{{endregion}} 
+{{endregion}}
 
+Another approach which you can use the ExpandAll() method of the GridViewTemplate.
+
+{{source=..\SamplesCS\GridView\HierarchicalGrid\HowTo\HowTo.cs region=expandAllMethod}} 
+{{source=..\SamplesVB\GridView\HierarchicalGrid\HowTo\HowTo1.vb region=expandAllMethod}} 
+
+````C#
+void ExpandAllRows(GridViewTemplate template)
+{
+    template.ExpandAll();
+}
+
+````
+````VB.NET
+Private Sub ExpandAllRows(ByVal template As GridViewTemplate)
+    template.ExpandAll()
+End Sub
+
+````
 
 
 # See Also
